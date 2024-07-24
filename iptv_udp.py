@@ -179,9 +179,10 @@ def main():
         # 读取文件并删除空白行
         try:
             with open(f'files/{province_isp}.txt', 'r', encoding='utf-8') as file:
+                print(province_isp) #temp
                 lines = file.readlines()
-                lines = [line.strip() for line in lines if line.strip()]
                 print(lines) #temp
+                lines = [line.strip() for line in lines if line.strip()]
             # 获取第一行中以包含 "udp://" 的值作为 mcast
             if lines:
                 first_line = lines[0]
