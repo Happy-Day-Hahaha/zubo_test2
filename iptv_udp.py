@@ -202,12 +202,16 @@ def main():
         # 根据不同的 isp 设置不同的 org 值
         org = "Chinanet"
         others = ''
-        if isp == "电信" and province_en == "sichuang":
+        if isp == "电信" and province_en == "sichuan":
             org = "Chinanet"
             isp_en = "ctcc"
             asn = "4134"
             others = '&& city="Chengdu" '
-        elif isp == "电信" and province_en != "sichuang":
+        elif isp == "电信" and province_en == "shanghai":
+            org = "Chinanet"
+            isp_en = "ctcc"
+            asn = "4812"            
+        elif isp == "电信" and province_en != "sichuan" and province_en != "shanghai":
             org = "Chinanet"
             isp_en = "ctcc"
             asn = "4134"
