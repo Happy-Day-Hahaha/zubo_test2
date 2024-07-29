@@ -210,7 +210,11 @@ def main():
         elif isp == "电信" and province_en == "shanghai":
             org = "Chinanet"
             isp_en = "ctcc"
-            asn = "4812"            
+            asn = "4812"        
+        elif isp == "电信" and province_en == "taiwan":
+            org = "zhonghua"
+            isp_en = "cttw"
+            asn = "3462"            
         elif isp == "电信" and province_en != "sichuan" and province_en != "shanghai":
             org = "Chinanet"
             isp_en = "ctcc"
