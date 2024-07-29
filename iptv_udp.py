@@ -215,7 +215,7 @@ def main():
             org = "zhonghua"
             isp_en = "cttw"
             asn = "3462"            
-        elif isp == "电信" and province_en != "sichuan" and province_en != "shanghai":
+        elif isp == "电信" and province_en != "sichuan" and province_en != "shanghai" and province_en != "taiwan":
             org = "Chinanet"
             isp_en = "ctcc"
             asn = "4134"
